@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sistema de Salário"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/textSalario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="Digite seu salário (R$)"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/editSalario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ex: 2500.00"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:fontFamily="monospace" />
+
+    <TextView
+        android:id="@+id/textSalario2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="Qual será o percentual?"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbOpcao1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="40%" />
+
+        <RadioButton
+            android:id="@+id/rbOpcao2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="45%" />
+
+        <RadioButton
+            android:id="@+id/rbOpcao3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="50%" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultado"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:fontFamily="monospace" />
+
+    <Button
+        android:id="@+id/btnset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ENVIAR"
+        android:onClick="enviar"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:backgroundTint="#FF00"
+        android:textAlignment="center" />
+
+</LinearLayout>

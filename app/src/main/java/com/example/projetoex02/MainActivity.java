@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Ligações
+     
         editSalario = findViewById(R.id.editSalario);
         radioGroup = findViewById(R.id.radioGroup);
         rbOpcao1 = findViewById(R.id.rbOpcao1);
